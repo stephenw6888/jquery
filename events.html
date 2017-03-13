@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery Template</title>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script>
+        $(function() {
+
+            $('.button').click(function() {
+
+                var story = "Hello " +
+                    name + " you have entered " + airline - choices + ". You have entered" +
+                    numbers - people + " and your email is " + e - mail + ".";
+
+                $('.container').css({
+                    'color': 'blue',
+                    'background-color': 'white',
+                    'font-family': 'Arial'
+                });
+                $('#1st-Q').html("Out of all the countries, what is your favorite place to live or visit in? You Must Choose One");
+                $('h2').fadeOut(2000);
+
+            });
+
+        });
+    </script>
+    <style>
+        div {
+            background: silver;
+            color: gray;
+            width: 535px;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="Title">Banner-Gernerator</h1>
+        <h2>Answer the first question. then submitting, then answer the next question.</h2>
+
+        Name:
+        <input id="name"><br> Airline Choices:
+        <input id="airline-choices"><br> Number's of People:
+        <input id="numbers-people"><br> E-Mail:
+        <input id="e-mail"><br>
+
+        <h1 id="1st-Q"> Out of these choices, what countries would you prefer to lived in? (Any number of countries)</h1>
+
+        France:
+        <input type="checkbox" name="countries 1" value="France"><br> England:
+        <input type="checkbox" name="countries 2" value="England"><br> Japan:
+        <input type="checkbox" name="countries 3" value="Japan"><br> Russia:
+        <input type="checkbox" name="countries 4" value="Russia"><br> China:
+        <input type="checkbox" name="countries 5" value="China"><br> Italy:
+        <input type="checkbox" name="countries 6" value="Italy"><br> Greece:
+        <input type="checkbox" name="countries 7" value="Greece"><br> Germany:
+        <input type="checkbox" name="countries 8" value="Germany"><br> Spain:
+        <input type="checkbox" name="countries 9" value="Spain"><br> Canada:
+        <input type="checkbox" name="countries 10" value="Canada"><br> Others:
+        <input type="text" name="Others"><br> Submit when your done:
+        <input class="button" type="submit" value="Submit">
+    </div>
+</body>
+
+</html>

@@ -1,29 +1,34 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script> 
-var x = math.floor((math.random() * 500) + 1);
-var y = math.floor((math.random() * 500) + 1); 
-var score = 0;
-$(document).ready(function(){
-    $("div").click(function(){
-        $("div").animate({
-        
-       
-       left: x;
-       top: y;
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script>
+        // var x = math.random() * 500+"px";
+        // var y = math.random() * 500+"px";
+        var score = 0;
+        $(document).ready(function() {
+            $("div").click(function() {
+                $("div").animate({
+
+
+                    left: (Math.random() * 500 + "px"),
+                    top: (Math.random() * 500 + "px"),
+                    score.val()
+                    $('h1').html(score: );
+                });
+            });
         });
-    });
-});
-</script> 
+    </script>
 </head>
+
 <body>
 
-<h1></h1>
+    <h1></h1>
 
 
-<div style="background:#98bf21;height:100px;width:100px;position:absolute;"></div>
+    <div style="background:#98bf21;height:100px;width:100px;position:absolute;"></div>
 
 </body>
+
 </html>
